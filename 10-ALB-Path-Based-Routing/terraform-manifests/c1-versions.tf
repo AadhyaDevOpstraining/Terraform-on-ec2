@@ -16,6 +16,7 @@ terraform {
 # Provider Block
 provider "aws" {
   region  = var.aws_region
+  shared_credentials_file = "/home/ubuntu/.aws/credentials"   # ubuntu servers its required linux servers not required this line
   profile = "default"
 }
 /*
